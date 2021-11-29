@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3 Mellisa Si04</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        min-height: 120vh;
+        flex-direction: column;
+        width: 900px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    #section{
+        display: flex;
+        flex: 1;
+    }
+    #section> aside{
+        flex: 0 0 20vw;
+        background-color: #FFC500;
+        order: 2;
+    }
+    #section> article{
+        background-color: #8b8b8b;
+        order: 3;
+        flex: 30 0 20vw;
+    }
+    header, footer{
+        background-color: palegreen;
+        height: 20vh;
+    }
+    header, footer, aside{
+        padding: 1em;
+    }
+    .image{
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 175px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-color: yellow;
+    }
+    .image1{
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 175px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-color: yellow;
+    }
+    .image2{
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 175px;
+        margin-bottom: 20px;
+        background-color: yellow;
+    }
+    .column{
+        width: 130px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="container">
+        <header><h3>Header</h3></header>
+        <div id="section">
+            <aside><h3>Aside</h3></aside>
+            <article><h2>Article</h2>
+                <div class="column image">Image</div>
+            <div class="column image1">Image</div>
+            <div class="column image2">Image</div>
+            </article>
+        </div>
+    </div>
+    <footer><h3>Footer</h3></footer>
+</body>
+</html>
